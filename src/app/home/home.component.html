@@ -1,0 +1,14 @@
+
+<div class="container-scroller">
+    <app-navbar></app-navbar>
+    <br><br>
+    <div class="container-fluid page-body-wrapper">
+          <app-hnavbar></app-hnavbar>
+        <div class="main-panel">
+            <app-dashboard *ngIf="dashboard"></app-dashboard>
+            <app-users *ngIf="users"></app-users>
+            <app-data-usage *ngIf="data_usage"></app-data-usage>
+        </div>
+        
+      </div>
+</div>

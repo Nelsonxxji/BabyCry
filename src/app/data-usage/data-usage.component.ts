@@ -47,9 +47,9 @@ export class DataUsageComponent implements OnInit {
     { data: [35000, 33000, 35000, 37000, 34000], label: 'Recordings' }
   ];
   // Doughnut Chart
-  doughnutChartLabels: Label[] = ['Amazon AWS', 'Microsoft Azure', 'IBM Cloud', 'Oracle Cloud'];
+  doughnutChartLabels: Label[] = ['CPU Utilization', 'Disk Reads', 'Disk Writes', 'Network Packets','CPU Credit Usage','CPU Credit Balance','Status Check Failed'];
   doughnutChartData: MultiDataSet = [
-    [55, 25, 20, 50]
+    [55, 25, 20, 50, 76, 42, 12]
   ];
   doughnutChartType: ChartType = 'doughnut';
   doughnutChartLegend = true;

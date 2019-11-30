@@ -38,5 +38,17 @@ export class FirestoreService {
   public getUsers(){
     return this.firestore.collection('users').snapshotChanges();
   }
+  // Set User
+  public setUser(data: any) {
+    return this.firestore.collection('users').add({'name':data.name, 'email': data.email, 'status': data.status, 'last': data.last, 'photoUrl': ''});
+  }
+  // Update User
+  public updateUser(documentId: string, data: any){
+    return this.firestore.collection('users').doc(documentId).update(data);
+  }
+  // Delete User
+  public deleteUser(documentId: string){
+    return this.firestore.collection('users').doc(documentId).delete();
+  }
 
 }

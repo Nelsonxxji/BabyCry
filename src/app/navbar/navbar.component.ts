@@ -25,7 +25,6 @@ export class NavbarComponent implements OnInit {
     this.authService.authState.subscribe((user) => {
       //User Log In
       this.user = user;
-      console.log(user);
       this.loggedIn = (user != null);
       if (!this.loggedIn) {
         alert('Come Back Soon')
